@@ -32,13 +32,3 @@ document.addEventListener('focusout', event => {
 document.addEventListener('click', event => {
   if (event.target && event.target.id === 'maxButton') { updateWithMax(event) }
 })
-
-
-/*
-function myfunction() {
-  const a = document.getElementById("firststring").value;
-  const b = document.getElementById("secondstring").value;
-  const ans = `The average tasks per developer is ${div(i, j)}`
-  document.getElementById("result").innerHTML = name+" , the biggest String among three is " +biggest;
-}
-*/
