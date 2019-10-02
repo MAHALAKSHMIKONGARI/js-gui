@@ -5,19 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Workload Estimator</title>
+  <title>Find the Max</title>
 
-  <meta name="description" content="Workload Estimator">
+  <meta name="description" content="Find the Max">
   <meta name="author" content="Maha Lakshmi">
-
+ 
   <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">-->
   <!-- Bootstrap core CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">-->
   <!-- Material Design Bootstrap -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <!-- required for sticky footer -->
   <style>
@@ -51,24 +55,24 @@
       <!--Rows have columns - column 1 (7/12) -->
       <div class="col-md-7 mb-4">
 
-        <h2><strong>Interactive app!</strong></h2>
+        <h2><strong>Find the Max!</strong></h2>
         <hr>
 
 
         <fieldset class="mt-4">
-          <label for="firstNumber">Enter number of tasks:</label>
-          <input id="firstNumber" type="number" min="1" max="100" value="">
+          <label for="firstNumber">Enter First Number:</label>
+          <input id="firstNumber" type="number" min="1" max="10000" value="">
           <span id="firstWarning" class="text-danger"></span>
         </fieldset>
 
         <fieldset class="mt-4">
-          <label for="secondNumber">Enter number of developers:</label>
-          <input id="secondNumber" type="number" min="1" max="100" value="">
+          <label for="secondNumber">Enter Second Number:</label>
+          <input id="secondNumber" type="number" min="1" max="10000" value="">
           <span id="secondWarning" class="text-danger"></span>
         </fieldset>
 
         <br>
-        <button id="divButton" class="btn btn-outline-primary">Get Average</button>
+        <button id="maxButton" class="btn btn-outline-primary">Get Max</button>
        <hr>
         <p id="result"></p>
 
@@ -76,24 +80,11 @@
     </div>
   </main>
 
-  <!-- sticky footer with padding on y-axis (top and bottom) -->
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <!--
-      <span class="text-muted">Right-click / Inspect / Console</span>
-      &#9670;
-      <a href="https://profcase.github.io/js-gui/">Demo</a>
-      &#9670;
-      <a href="https://github.com/profcase/js-gui">Source</a>
-      -->
-      Maha Lakshmi 2019
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+  <footer class="footer mt-auto py-3 bg-light"> &copy Maha Lakshmi 2019 </footer>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 
 </body>
