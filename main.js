@@ -13,18 +13,18 @@ const validate = async (event) => {
 
 const updateWithMax = async (event) => {
   document.querySelector('#result').innerHTML = ''
-  if (document.querySelector('#firstNumber').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
+  if (document.querySelector('#one').checkValidity() && document.querySelector('#two').checkValidity()) {
     
-    const i = parseInt(document.querySelector('#firstNumber').value)
-    const j = parseInt(document.querySelector('#secondNumber').value)
+    const i = parseInt(document.querySelector('#one').value)
+    const j = parseInt(document.querySelector('#two').value)
     const ans = `The Max of ${i} and ${j} is ${Math.max(i, j)}`
     document.querySelector('#result').innerHTML = ans
   }
 }
 
 document.addEventListener('focusout', event => {
-  if ((event.target && event.target.id === 'firstNumber') ||
-    (event.target && event.target.id === 'secondNumber')) {
+  if ((event.target && event.target.id === 'one') ||
+    (event.target && event.target.id === 'two')) {
     validate(event)
   }
 })
